@@ -1,6 +1,6 @@
 [Unit]
 Description=Consul agent
-After=network.target
+After=network.target docker.service
 
 [Service]
 Restart=on-failure

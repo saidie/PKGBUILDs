@@ -3,7 +3,7 @@
 pkgname=consul
 pkgdesc='Consul is a service networking solution to connect and secure services across any runtime platform and public or private cloud'
 pkgver=1.6.2
-pkgrel=1
+pkgrel=2
 arch=('x86_64' 'armv7h')
 url="https://www.consulproject.io/"
 license=('MPL2')
@@ -12,12 +12,12 @@ if test "$CARCH" == x86_64; then
     source=("https://releases.hashicorp.com/consul/${pkgver}/consul_${pkgver}_linux_amd64.zip"
             consul.service)
     sha256sums=(78d127e5b8edd310c3f9f89487fb833a5c7bcb4e09cb731a4d39100fc53b38be
-                ac89b59ac3f460f33ffb1abbd4d28de237f71e8ed8dfd851eaaee97c0a2c09c4)
+                7cfd5f2312976e332bfd633c4ff789f4f0c9f3d967a6069327dc000672a1ee15)
 else
     source=("https://releases.hashicorp.com/consul/${pkgver}/consul_${pkgver}_linux_armhfv6.zip"
             consul.service)
     sha256sums=(0e7dd7f4a6ab9038d3fe2389962b05c1ac91fe80b4a3e9477d6d3213dcfc6ddd
-                ac89b59ac3f460f33ffb1abbd4d28de237f71e8ed8dfd851eaaee97c0a2c09c4)
+                7cfd5f2312976e332bfd633c4ff789f4f0c9f3d967a6069327dc000672a1ee15)
 fi
 
 package() {
