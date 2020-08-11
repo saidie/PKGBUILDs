@@ -2,8 +2,8 @@
 
 pkgname=nomad
 pkgdesc='Nomad is a flexible workload orchestrator.'
-pkgver=0.10.2
-pkgrel=2
+pkgver=0.12.1
+pkgrel=1
 arch=('x86_64' 'armv7h')
 url="https://www.nomadproject.io/"
 license=('MPL2')
@@ -12,14 +12,14 @@ if test "$CARCH" == x86_64; then
     source=("https://releases.hashicorp.com/nomad/${pkgver}/nomad_${pkgver}_linux_amd64.zip"
             nomad.hcl
             nomad.service)
-    sha256sums=('cab179b0245e07ed39f4bcaa543e88d32fadf8660c2230733ce836873fe2714d'
+    sha256sums=('b9a266340306f5e8ccbc41b1076250296abb626f7f233c79b70e000e531da509'
                 90d76c084ed0b08cfc845b7ab94de1f3309d07110158fd7bf416affe2c9b5673
                 e44cc80e6a9f1b43f247b0cb9b8262dfd44fa5944662398529562b08793bc6bf)
 else
     source=("https://releases.hashicorp.com/nomad/${pkgver}/nomad_${pkgver}_linux_arm.zip"
             nomad.hcl
             nomad.service)
-    sha256sums=('2b3d6ee8a5b49bda511de4a11764580ef060ec56cce35e92940dbdfafee794f4'
+    sha256sums=('4cc3025822dd922f0109617337b0cfd37efe9a9e84fa34ceac90d3615463ac24'
                 90d76c084ed0b08cfc845b7ab94de1f3309d07110158fd7bf416affe2c9b5673
                 e44cc80e6a9f1b43f247b0cb9b8262dfd44fa5944662398529562b08793bc6bf)
 fi
