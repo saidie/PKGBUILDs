@@ -2,8 +2,8 @@
 
 pkgname=consul
 pkgdesc='Consul is a service networking solution to connect and secure services across any runtime platform and public or private cloud'
-pkgver=1.6.2
-pkgrel=2
+pkgver=1.9.3
+pkgrel=1
 arch=('x86_64' 'armv7h')
 url="https://www.consulproject.io/"
 license=('MPL2')
@@ -11,12 +11,12 @@ provides=('consul')
 if test "$CARCH" == x86_64; then
     source=("https://releases.hashicorp.com/consul/${pkgver}/consul_${pkgver}_linux_amd64.zip"
             consul.service)
-    sha256sums=(78d127e5b8edd310c3f9f89487fb833a5c7bcb4e09cb731a4d39100fc53b38be
+    sha256sums=(2ec9203bf370ae332f6584f4decc2f25097ec9ef63852cd4ef58fdd27a313577
                 7cfd5f2312976e332bfd633c4ff789f4f0c9f3d967a6069327dc000672a1ee15)
 else
     source=("https://releases.hashicorp.com/consul/${pkgver}/consul_${pkgver}_linux_armhfv6.zip"
             consul.service)
-    sha256sums=(0e7dd7f4a6ab9038d3fe2389962b05c1ac91fe80b4a3e9477d6d3213dcfc6ddd
+    sha256sums=(2394438e61ccb118c4165c1d5512a4d5649c48be1d13305c6585667cc7c7f9cd
                 7cfd5f2312976e332bfd633c4ff789f4f0c9f3d967a6069327dc000672a1ee15)
 fi
 
